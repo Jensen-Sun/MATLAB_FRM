@@ -1,0 +1,11 @@
+x = linspace(0, 4, 100);
+figure(1)
+plot(x, x, 'k--', x, (x-2).^2, 'k', [1, 1], [0,4], 'k--')
+xlabel('x')
+ylabel('Value of function')
+title('Visualization of two intersecting curves')
+text(1.1, 2, '\leftarrow x = 1')
+text(2, 0.4, '\downarrow y = (x-2)^2')
+text(3, 3.4, 'y = x \rightarrow')
+legend('x', '(x-2)^2', 'Location','southwest')
+set(gca, 'FontName', 'Times New Roman')
